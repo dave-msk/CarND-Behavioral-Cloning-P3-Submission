@@ -60,13 +60,13 @@ Four fully-connected are included after the above block of convolutional layers,
 
 ####2. Attempts to reduce overfitting in the model
 
-The model contains four dropout layers in order to reduce overfitting (model.py lines 152, 154, 156, 158). 
+The model contains four dropout layers in order to reduce overfitting (model.py lines 166, 168, 170, 172). 
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 172-176). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ####3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 33, 187).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 33, 201).
 
 ####4. Appropriate training data
 
@@ -93,7 +93,7 @@ The testing result of the modified model can be viewed in "video.mp4". One can e
 
 ####2. Final Model Architecture
 
-The final model architecture (model.py lines 143-162) consisted of a convolution neural network with the following layers and layer sizes:
+The final model architecture (model.py lines 153-175) consisted of a convolution neural network with the following layers and layer sizes:
 
 |         Layer         |           Details          |
 |:---------------------:|:--------------------------:|
@@ -146,7 +146,7 @@ The testing model is trained on this modified data set and the simulator testing
 
 At this stage, we can tell that the data is indeed complete as evidenced by the performance of this simple network.
 
-After the collection process, I had 29,217 images. To optimize storage efficiency, the driving log will first be processed such that each record would be converted into a tuple (name, angle, throttle, brake, speed, flipped), where "flipped" is a flag to tell the data generator whether it should flip both the image and the angle or not. Therefore, the actual number of data points that would be used in training is 29,217 x 2 = 58,434 data points.
+After the collection process, I had 29217 images. To optimize storage efficiency, the driving log will first be processed such that each record would be converted into a tuple (name, angle, throttle, brake, speed, flipped), where "flipped" is a flag to tell the data generator whether it should flip both the image and the angle or not. Therefore, the actual number of data points that would be used in training is 29217 x 2 = 58434 data points.
 
 ####4. Training Details
 
