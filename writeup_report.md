@@ -62,7 +62,7 @@ Four fully-connected are included after the above block of convolutional layers,
 
 The model contains four dropout layers in order to reduce overfitting (model.py lines 166, 168, 170, 172). 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 172-176). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 186-190). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 ####3. Model parameter tuning
 
